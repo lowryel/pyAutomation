@@ -20,10 +20,11 @@ Do you also know that we can use figures as in numbers to represent those rights
 Let's dive into it.
 I'm pretty sure most of us have seen some of these commands before:
 - chmod 700 hello.py, chmod 754 hello_world.sh, or chmod 777 /etc/kubernetes however, we do not understand the figures.
-- This is what they means.
+- This is what they mean.
 Remember the three rights stated earlier, this is what they are reffered to in numerical terms. **4 - read, 2 - write and 1 - execute** and each of the commands above (chmod '700') also represent **7-user, 0-group and 0-others** in that order.
 
 Now, that is not the end of it. Each figure (700) = chmod 7=4+2+1 0=0+0+0 0=0+0+0 which all represent the read, write and execute permissions for each user on a file or directory.
 
-Eg. **chmod 754 hello.py** means *a user/owner can 4-read, 2-write and 1-execute the hello.py file, and the group users can 4-read and 1-execute the hello.py file, but the other users can only 4-read that file.
-  
+Eg. **chmod 754 hello.py** means *a user/owner can 4-read, 2-write and 1-execute the hello.py file, and the group users can 4-read and 1-execute the hello.py file*, but the other users can only 4-read that file.
+
+So just do the math whenever you want to use **chmod 777** on any important file.
